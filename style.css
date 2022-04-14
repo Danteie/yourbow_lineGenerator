@@ -88,8 +88,9 @@ select{
 }
 
 footer{
-    position: absolute;
-    bottom: 2rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 /* Theme */
