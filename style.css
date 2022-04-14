@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 
+:root{
+    --bg-color: white;
+    --text-color: black;
+}
 
 *{
     margin: 0;
@@ -12,6 +16,8 @@ body{
     justify-content: center;
     align-items: center;
     font-family: 'Roboto', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color)
 }
 
 hr{
@@ -63,7 +69,7 @@ button{
 }
 
 .output{
-    border: 1px solid black;
+    border: 1px solid var(--text-color);
     padding: 2rem;
     margin: 2rem;
 }
@@ -87,9 +93,26 @@ footer{
     width: 100%;
 }
 
-@media screen and (max-width: 1300px) {
+/* Theme */
+
+.theme{
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    width: 2rem;
+    background-color: black;
+    border: thin solid yellow
+}
+
+.gen{
+    background-color: hsla(0, 50%, 56%, 1);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* @media screen and (max-width: 1300px) {
    .input{
        display: flex;
        flex-direction: column;
    }
-}
+} */
