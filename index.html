@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Webinar Linije</title>
+</head>
+<body>
+    <h1 class="head">LINIJE ZA WEBINAR</h1>
+    <hr>
+    <div class="input-space">
+        <label>Sajt</label><select name="" id="select">
+            <option value="GNWO">GNWO</option>
+            <option value="GDXO">GDXO</option>
+            <option value="GPO">GPO</option>
+        </select>
+        <label>Adver </label><input type="text" name="" id="adv" value="">
+        <label>Ime kampanje </label><input type="text" name="" id="chm" value="">
+        <label>NTV linija</label>
+                <select type="number" name="" id="num">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+             </select>
+
+    </div>
+    <button onclick="output()">Generisi</button>
+
+    <div class="hiden" id="hiden1">
+        <h1>ORDER</h1>
+        <div class="output">
+            <h1 id="order"></h1>
+        </div>
+    </div>
+
+    <div class="hiden" id="hiden2">
+        <h1>LINIJE</h1>
+        <div class="output" >
+            
+            <h1 id="output"></h1>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>

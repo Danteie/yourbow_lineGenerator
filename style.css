@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+hr{
+    color: black;
+    width: 100%;
+    margin: 0.5rem;
+}
+
+h1{
+    text-align: center;
+}
+
+.head{
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+.input-space{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+label{
+    font-size: 2rem;
+}
+
+input, select{
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+input[type=text]{
+    width: 15rem;
+    height: 3rem;
+    font-size: 2rem;
+}
+
+input[type=number]{
+    width: 3rem;
+    height: 3rem;
+    font-size: 2rem;
+}
+
+button{
+    width: 20rem;
+    height: 2rem;
+    margin: 0.5rem;
+}
+
+.output{
+    border: 1px solid black;
+    padding: 2rem;
+    margin: 2rem;
+}
+
+#output{
+    line-height: 2em;
+   
+}
+
+select{
+    height: 2rem;
+}
+
+.hiden{
+    opacity: 0;
+}
+
+@media screen and (max-width: 1300px) {
+   .input{
+       display: flex;
+       flex-direction: column;
+   }
+}
