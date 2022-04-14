@@ -42,3 +42,4 @@ function output(){
     hiden1.style.opacity = "1";
     hiden2.style.opacity = "1";
 }
+
