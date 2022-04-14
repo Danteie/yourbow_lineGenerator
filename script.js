@@ -3,6 +3,9 @@ var outputLines = document.getElementById("output");
 var orderLine = document.getElementById("order");
 var hiden1 =  document.getElementById("hiden1");
 var hiden2 =  document.getElementById("hiden2");
+var icon = document.getElementById("icon-image");
+var r = document.querySelector(':root');
+var theme = true;
 var positions = ["LB_01","LB_02","REC_01","REC_02","SR_01","SR_02","SKY_01","NTV_0"] 
 var order = "";
 var lines = ""
@@ -43,3 +46,20 @@ function output(){
     hiden2.style.opacity = "1";
 }
 
+function themeChanger(){
+    if (theme === true) {
+        r.style.setProperty('--bg-color', 'black');
+        r.style.setProperty('--text-color', 'white');
+        icon.src = './assets/icon-sun.svg';
+        theme = false; 
+        return
+    }
+    if (!theme) {
+        r.style.setProperty('--bg-color', 'white');
+        r.style.setProperty('--text-color', 'black');
+        icon.src = './assets/icon-moon.svg';
+        theme = true;
+        return
+    }
+    
+}
