@@ -81,6 +81,11 @@ select{
     opacity: 0;
 }
 
+footer{
+    position: absolute;
+    bottom: 2rem;
+}
+
 @media screen and (max-width: 1300px) {
    .input{
        display: flex;
