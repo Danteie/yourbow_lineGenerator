@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Webinar Linije</title>
+</head>
+<body>
+    <a href="index.html"><img src="./assets/icons8-house-60.png" alt="home" class='home'></a>
+    <h1 class="head">TTBL Linije</h1>
+    <button class="theme" onClick="themeChanger()"><img src="./assets/icon-moon.svg" alt="theme icon" id="icon-image"></button>
+    <hr>
+    <div class="input-space">
+        <label>Sajt</label><select name="" id="select">
+            <option value="GNWO">GNWO</option>
+            <option value="GDXO">GDXO</option>
+            <option value="GPO">GPO</option>
+        </select>
+        <label>Adver </label><input type="text" name="" id="adv" value="">
+        <label>Ime kampanje </label><input type="text" name="" id="chm" value="">
+        <label>Pocetak e-blasta</label>
+            <input type="date" id="startDate" name="trip-start">
+    </div>
+    <button onclick="output2()" class="gen">GENERISI</button>
+
+    <div class="hiden" id="hiden1">
+        <h1>ORDER</h1>
+        <div class="output">
+            <h1 id="order"></h1>
+        </div>
+    </div>
+
+    <div class="hiden" id="hiden2">
+        <h1>LINIJE</h1>
+        <div class="output" >
+            
+            <h1 id="output"></h1>
+        </div>
+    </div>
+
+    <footer>
+        Coded by <a href="https://github.com/Danteie">Aca</a>.
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>

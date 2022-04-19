@@ -10,6 +10,7 @@ var positions = ["LB_01","LB_02","REC_01","REC_02","SR_01","SR_02","SKY_01","NTV
 var order = "";
 var lines = ""
 var line = "";
+var dateTtbl = '';
 
 //Date
 
@@ -18,7 +19,7 @@ var dd = String(today.getDate()).padStart(2, '0');
 var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
 var yyyy = today.getFullYear();
 
-
+//Webinar Linije
 function generate(){
     var select = document.getElementById("select").value;
     var adv = document.getElementById("adv").value;
@@ -33,11 +34,36 @@ function generate(){
             
             return
         }
-        lines += select + "_" + adv + "_" + chm + "_" + "WBASE" + "_" + positions[index] + "_" + yyyy +"-" + mm + "-" + dd + "<br/>"; 
+        lines += select + "_" + adv + "_" + chm + "_" + "WBASE" + "_" + positions[index] + "_" + yyyy + "-" + mm + "-" + dd + "<br/>"; 
     } 
-
+   
 }
 
+
+
+
+//TTBL linije
+
+document.getElementById("startDate").addEventListener("change", function() {
+     dateTtbl = this.value;
+});
+
+function generateTtbl(){
+    var select = document.getElementById("select").value;
+    var adv = document.getElementById("adv").value;
+    var chm = document.getElementById("chm").value;
+    var number = document.getElementById("startDate").value;
+    order = select + "_" + adv + "_" + chm;
+    
+    lines= [];
+    for (let index = 0; index <= 9; index++) {
+        lines += select + "_" + adv + "_" + chm + "_" + "TTBL" + "_"  + dateTtbl + "<br/>"; 
+        console.log('radi');
+    } 
+}
+
+
+//webinar output
 function output(){
     generate()
     outputLines.innerHTML = lines;
@@ -45,6 +71,16 @@ function output(){
     hiden1.style.opacity = "1";
     hiden2.style.opacity = "1";
 }
+
+//TTBL output
+function output2(){
+    generateTtbl();
+    outputLines.innerHTML = lines;
+    hiden2.style.opacity = "1";
+}
+
+
+
 
 function themeChanger(){
     if (theme === true) {
