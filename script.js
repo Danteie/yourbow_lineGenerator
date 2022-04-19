@@ -7,6 +7,7 @@ var icon = document.getElementById("icon-image");
 var r = document.querySelector(':root');
 var theme = true;
 var positions = ["LB_01","LB_02","REC_01","REC_02","SR_01","SR_02","SKY_01","NTV_0"] 
+var ttblPosition = [1,1.1,2,3,4]
 var order = "";
 var lines = ""
 var line = "";
@@ -40,8 +41,6 @@ function generate(){
 }
 
 
-
-
 //TTBL linije
 
 document.getElementById("startDate").addEventListener("change", function() {
@@ -56,8 +55,8 @@ function generateTtbl(){
     order = select + "_" + adv + "_" + chm;
     
     lines= [];
-    for (let index = 0; index <= 9; index++) {
-        lines += select + "_" + adv + "_" + chm + "_" + "TTBL" + "_"  + dateTtbl + "<br/>"; 
+    for (let index = 0; index <= 4; index++) {
+        lines += select + "_" + adv + "_" + chm + "_" + "TTBL" + "_" + ttblPosition[index] + '_' + dateTtbl + "<br/>"; 
         console.log('radi');
     } 
 }
