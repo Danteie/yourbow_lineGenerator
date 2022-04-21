@@ -166,6 +166,13 @@ input[type=date]{
     font-size: 2rem;
 }
 
+.fact{
+    margin: 10rem;
+    padding: 2rem;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
 
 
 /* @media screen and (max-width: 1300px) {

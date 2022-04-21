@@ -236,9 +236,6 @@ const stop = () => {
 // if you dont want to make it stop and make it infinite you can just remove the stop function 😊
 
 
-
-var test = 0
-
 function payday() {
     if (dd < 29) {
         var day = 29 - dd
